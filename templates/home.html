@@ -53,7 +53,7 @@
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+          font-size: 5 rem;
         }
       }
     </style>
@@ -68,14 +68,14 @@
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
           <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <p class="text-muted">本网站展示的是国家乒乓球队员马龙的一些动态，为更多喜欢马龙以及喜欢乒乓球的粉丝提供一个小空间。不问终点，全力以赴，齐看龙腾天下！</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
+          <h4 class="text-white">龙队yyds</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a href="#" class="text-white">马龙的进阶之路</a></li>
+            <li><a href="#" class="text-white">马龙资讯</a></li>
+            <li><a href="#" class="text-white">马龙背后</a></li>
           </ul>
         </div>
       </div>
@@ -85,7 +85,7 @@
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
+        <strong>马龙吧</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -99,11 +99,11 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <h1 class="fw-light" >不问终点 全力以赴 马龙*乒乓球</h1>
+        <p class="lead text-muted">当他不曾放弃对那棵白色小球的追逐，这片场上，就永远是属于马龙的时代。正向在出征东京前他对自己说的那样，马龙，你的美丽人生才刚刚开始。</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          <a href="blog" class="btn btn-primary my-2">资讯速递</a>
+          <a href="#" class="btn btn-secondary my-2">马龙百科</a>
         </p>
       </div>
     </div>
@@ -116,7 +116,7 @@
         {% for gallery in gallerys.all %}
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="{{ gallery.image.url }}" >
+            <img class="bd-placeholder-img card-img-top" src="{{ gallery.image.url }}" height="600px">
             <div class="card-body">
               <p class="card-text">{{ gallery.description }}</p>
 <!--              <div class="d-flex justify-content-between align-items-center">-->
@@ -141,8 +141,8 @@
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.1/getting-started/introduction/">getting started guide</a>.</p>
+    <p class="mb-1">东京不是终点，巴黎也不是。“我喜欢乒乓球，我还想继续打。”这，是马龙的不问终点全力以赴。</p>
+    <p class="mb-0">他选择了继续——不为别的，只为热爱罢了 </p>
   </div>
 </footer>
 
