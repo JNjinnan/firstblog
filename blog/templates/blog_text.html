@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style type="text/css">
+    pre{
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    }
+</style>
+<div style="text-align:center">
+    <h1>{{blog.title}}</h1>
+        <h3>{{blog.date}}</h3>
+    <img src="{{blog.image.url}}" height=auto width=700px>
+</div>
+<pre style="width:750px;font-size:150%;margin:20px auto;">
+    {{blog.text}}
+</pre>
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+
+</body>
+</html>

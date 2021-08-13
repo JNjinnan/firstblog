@@ -56,7 +56,7 @@
 
     <style>
       .bd-placeholder-img {
-        font-size: 1.125rem;
+        font-size: 2 rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -121,12 +121,12 @@
   </section>
     <div class="container">
     {% for blog in blogs.all %}
-    <h3><a href="">{{ blog.title }}</a></h3>
+    <h3><a href="{{ blog.id }}">{{ blog.title }}</a></h3>
     {{ blog.date }}
     <br>
     <img src="{{ blog.image.url }}" height=200px>
     <br>
-    <pre style="width:1000px" >{{ blog.short_text }}</pre>
+    <pre style="width:800px" >{{ blog.short_text }}</pre>
     <br>
     {% endfor %}
     </div>
