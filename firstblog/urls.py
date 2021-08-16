@@ -27,3 +27,4 @@ urlpatterns = [
     path('blog/', blog.views.blog_page),
     path('blog/<int:blog_id>/', blog.views.blog_text),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
